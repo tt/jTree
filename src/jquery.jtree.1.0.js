@@ -73,13 +73,14 @@
 		
 		$(document).mouseup(function(e){
 			if (cur!=0) {
+				var temp = cur;
 				$("#jTreeHelper").animate({
 					top: curOff.top,
 					left: curOff.left
 						}, opts.snapBack, function(){
 							$("#jTreeHelper").empty().hide();
 							$(".jTreePlacement").remove();
-							$(cur).show();
+							$(temp).show();
 						}
 				);
 				destroyBindings();
