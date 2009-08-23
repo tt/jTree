@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style>
+body {cursor:pointer}
+
+
+ul li {
+background: #FF9;
+list-style:none;
+padding:0;
+}
+
+
+#jTreeHelper {
+width: 200px;
+margin:0;
+padding:0;
+}
+#jTreeHelper li {
+display:inline;
+}
+</style>
+<script language="javascript" type="text/javascript" src="jquery-1.2.3.min.js"></script>
+<script language="javascript" type="text/javascript" src="jquery.jtree.1.0.js"></script>
+<script language="javascript">
+$(document).ready(function(){
+	$("#yahoo").jTree({
+		showHelper: false,
+		hOpacity: 0.5,
+		hBg: "#FCC",
+		hColor: "#222",
+		pBorder: "1px dashed #CCC",
+		pBg: "#EEE",
+		pColor: "#222",
+		pHeight: "20px",
+		snapBack: 300,
+		childOff: 20
+	});
+});
+</script>
+<title>jTree 1.0 Demo</title>
+</head>
+
+<body>
+<ul id="yahoo">
+<li>a -apple
+</li>
+<li>b - bee
+</li>
+<li>c - caterpillar
+</li>
+<li>d - donkey
+</li>
+</ul>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+
+<span></span>
+<div></div>
+<ul id="jTreeHelper"></ul>
+</body>
+
+</html>
